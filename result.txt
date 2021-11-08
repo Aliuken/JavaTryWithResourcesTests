@@ -1,0 +1,13 @@
+fileReaderErrorCondition: false, bufferedReaderErrorCondition: false
+file aaa: bbb
+my close2
+my close1
+my close1
+end
+fileReaderErrorCondition: true, bufferedReaderErrorCondition: false
+exception: ccc
+fileReaderErrorCondition: false, bufferedReaderErrorCondition: true
+my close1
+exception: ddd
+fileReaderErrorCondition: true, bufferedReaderErrorCondition: true
+exception: ccc
