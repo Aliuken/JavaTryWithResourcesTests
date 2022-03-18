@@ -43,6 +43,7 @@ public class Main {
         }
 
         System.out.println("-----------------------------------------------------------------------------------------");
+        System.out.println("-----------------------------------------------------------------------------------------");
     }
 
     private BufferedReader getMyBufferedReader(boolean errorCondition, FileReader fileReader) throws Exception {
