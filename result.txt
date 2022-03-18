@@ -22,6 +22,7 @@ MyBufferedReaderWithCloseError close
 MyFileReader close
 exception: MyBufferedReaderWithCloseError close error
 -----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
 fileReaderErrorCondition: true, bufferedReaderErrorCondition: false, filePath: ./aaa.txt
 -----------------------------------------------------------------------------------------
 exception: getMyFileReader condition error
@@ -29,6 +30,7 @@ exception: getMyFileReader condition error
 exception: getMyFileReaderWithCloseError condition error
 -----------------------------------------------------------------------------------------
 exception: getMyFileReader condition error
+-----------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------
 fileReaderErrorCondition: false, bufferedReaderErrorCondition: true, filePath: ./aaa.txt
 -----------------------------------------------------------------------------------------
@@ -43,4 +45,5 @@ exception: getMyBufferedReader condition error
 getMyFileReader condition ok
 MyFileReader close
 exception: getMyBufferedReaderWithCloseError condition error
+-----------------------------------------------------------------------------------------
 -----------------------------------------------------------------------------------------
