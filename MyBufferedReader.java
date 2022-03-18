@@ -7,7 +7,7 @@ public class MyBufferedReader extends BufferedReader {
 
     @Override
     public void close() throws IOException {
-        System.out.println("my close2");
+        System.out.println("MyBufferedReader close");
         super.close();
     }
 }

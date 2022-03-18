@@ -10,7 +10,7 @@ public class MyFileReader extends FileReader {
 
     @Override
     public void close() throws IOException {
-        System.out.println("my close1");
+        System.out.println("MyFileReader close");
         super.close();
     }
 }
