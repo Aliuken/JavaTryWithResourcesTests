@@ -1,13 +1,46 @@
-fileReaderErrorCondition: false, bufferedReaderErrorCondition: false
-file aaa: bbb
-my close2
-my close1
-my close1
-end
-fileReaderErrorCondition: true, bufferedReaderErrorCondition: false
-exception: ccc
-fileReaderErrorCondition: false, bufferedReaderErrorCondition: true
-my close1
-exception: ddd
-fileReaderErrorCondition: true, bufferedReaderErrorCondition: true
-exception: ccc
+fileReaderErrorCondition: false, bufferedReaderErrorCondition: false, filePath: ./aaa.txt
+-----------------------------------------------------------------------------------------
+getMyFileReader condition ok
+getMyBufferedReader condition ok
+file 'aaa.txt' content: bbb
+MyBufferedReader close
+MyFileReader close
+MyFileReader close
+-----------------------------------------------------------------------------------------
+getMyFileReaderWithCloseError condition ok
+getMyBufferedReader condition ok
+file 'aaa.txt' content: bbb
+MyBufferedReader close
+MyFileReaderWithCloseError close
+MyFileReaderWithCloseError close
+exception: MyFileReaderWithCloseError close error
+-----------------------------------------------------------------------------------------
+getMyFileReader condition ok
+getMyBufferedReaderWithCloseError condition ok
+file 'aaa.txt' content: bbb
+MyBufferedReaderWithCloseError close
+MyFileReader close
+exception: MyBufferedReaderWithCloseError close error
+-----------------------------------------------------------------------------------------
+fileReaderErrorCondition: true, bufferedReaderErrorCondition: false, filePath: ./aaa.txt
+-----------------------------------------------------------------------------------------
+exception: getMyFileReader condition error
+-----------------------------------------------------------------------------------------
+exception: getMyFileReaderWithCloseError condition error
+-----------------------------------------------------------------------------------------
+exception: getMyFileReader condition error
+-----------------------------------------------------------------------------------------
+fileReaderErrorCondition: false, bufferedReaderErrorCondition: true, filePath: ./aaa.txt
+-----------------------------------------------------------------------------------------
+getMyFileReader condition ok
+MyFileReader close
+exception: getMyBufferedReader condition error
+-----------------------------------------------------------------------------------------
+getMyFileReaderWithCloseError condition ok
+MyFileReaderWithCloseError close
+exception: getMyBufferedReader condition error
+-----------------------------------------------------------------------------------------
+getMyFileReader condition ok
+MyFileReader close
+exception: getMyBufferedReaderWithCloseError condition error
+-----------------------------------------------------------------------------------------
